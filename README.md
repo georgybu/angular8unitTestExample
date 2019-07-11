@@ -1,4 +1,19 @@
-# Ng8test1
+#Example of unit test angular 8 => component and async service
+
+```
+ng new ng8test
+ng g s users
+
+...
+
+npm test
+```
+
+## Screenshot
+
+![screenshot](docs/screenshot.png?raw=true 'Screenshot')
+
+# Ng8test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
 
