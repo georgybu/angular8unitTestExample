@@ -9,9 +9,21 @@ ng g s users
 npm test
 ```
 
-## Screenshot
+## Karma + Jasmine
+
+checkout branch: `karma-jasmine`
 
 ![screenshot](docs/screenshot.png?raw=true 'Screenshot')
+
+## Jest
+
+checkout branch: `jest` or `master`
+
+run test via `npm test` or via WebStorm Configuration
+
+checkout branch: `jest`
+
+![screenshot](docs/screenshot-jest.png?raw=true 'Screenshot')
 
 # Ng8test
 

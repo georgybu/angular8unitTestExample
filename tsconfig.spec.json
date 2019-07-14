@@ -1,18 +1,31 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine",
-      "node"
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "target": "es5",
+    "baseUrl": "src",
+    "types": ["jest", "node"],
+    "allowJs": true,
+    "sourceMap": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
     ]
   },
   "files": [
-    "src/test.ts",
-    "src/polyfills.ts"
+    "src/karmaTest.ts"
   ],
   "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "**/*.spec.ts",
+    "**/*.d.ts"
   ]
 }
