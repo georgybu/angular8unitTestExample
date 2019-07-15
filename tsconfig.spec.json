@@ -19,7 +19,12 @@
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@services/*": [
+        "src/app/services/*"
+      ]
+    }
   },
   "files": [
     "src/karmaTest.ts"

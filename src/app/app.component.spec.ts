@@ -1,6 +1,6 @@
 import {async, ComponentFixture, fakeAsync, TestBed, tick} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {UsersService} from './users.service';
+import {UsersService} from './services/users.service';
 import {of} from 'rxjs';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 

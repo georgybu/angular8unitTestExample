@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest",
+    "test": "jest --verbose",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
     "test:coverage": "jest --coverage",
@@ -54,8 +54,9 @@
       "jest-preset-angular/HTMLCommentSerializer.js"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png)$": "<rootDir>/__mocks__/image.js",
-      "^@lib/(.*)$": "<rootDir>/src/lib/$1"
+      "@services(.*)": "<rootDir>/src/app/services$1",
+      "@models(.*)": "<rootDir>/src/app/models$1",
+      "@store(.*)": "<rootDir>/src/app/store$1"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupJest.ts"
