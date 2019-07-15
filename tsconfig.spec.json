@@ -26,9 +26,6 @@
       ]
     }
   },
-  "files": [
-    "src/karmaTest.ts"
-  ],
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
