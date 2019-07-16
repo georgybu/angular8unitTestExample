@@ -3,6 +3,8 @@ import {AppComponent} from './app.component';
 import {UsersService} from '@services/users.service';
 import {of} from 'rxjs';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
+import {NgZone} from '@angular/core';
+import {MockNgZone} from '../tests/mockNgZone';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -13,7 +15,10 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       declarations: [AppComponent],
-      providers: [{provide: UsersService, useValue: {}}]
+      providers: [
+        {provide: UsersService, useValue: {}},
+        {provide: NgZone, useClass: MockNgZone}
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
