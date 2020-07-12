@@ -1,14 +1,4 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
-
-@NgModule()
-class AgmCoreModule {
-  static forRoot(...args): ModuleWithProviders {
-    return {
-      ngModule: AgmCoreModule,
-      providers: []
-    };
-  }
-}
+import {AgmCoreModule} from './origin/packages/core';
 
 class MapsAPILoader {
   load() {
